@@ -104,6 +104,9 @@ from routes.adminPanelComments import (
 from routes.changeProfilePicture import (
     changeProfilePictureBlueprint,
 )  # Importing the blueprint for changing profile picture route
+from routes.rastgele_url import (
+    urlBlueprint,
+)
 
 from flask_wtf.csrf import (
     CSRFProtect,
@@ -393,6 +396,7 @@ app.register_blueprint(
     userBlueprint
 )  # Registering the blueprint for handling user routes
 app.register_blueprint(indexBlueprint)  # Registering the blueprint for the index route
+app.register_blueprint(urlBlueprint)    # Registering the blueprint for the randomurl route
 app.register_blueprint(aboutBlueprint)  # Registering the blueprint for the about route
 app.register_blueprint(loginBlueprint)  # Registering the blueprint for the login route
 app.register_blueprint(

@@ -96,6 +96,9 @@ DB_USERS_ROOT = DB_FOLDER_ROOT + "users.db"  # (str)
 # Root path of the posts database
 DB_POSTS_ROOT = DB_FOLDER_ROOT + "posts.db"  # (str)
 
+# Root path of the posts database
+DB_URL_ROOT = DB_FOLDER_ROOT + "url.db"  # (str)
+
 # Root path of the comments database
 DB_COMMENTS_ROOT = DB_FOLDER_ROOT + "comments.db"  # (str)
 
